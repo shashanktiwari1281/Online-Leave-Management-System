@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "863226906093",
+    "project_id": "ems-iise",
+    "storage_bucket": "ems-iise.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863226906093:android:dad03ad9733b8e0a6b53e4",
+        "android_client_info": {
+          "package_name": "com.employee_management_system.shashank"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUuuhsD7hqBed4LBJBwszSRaHTQNC0568"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

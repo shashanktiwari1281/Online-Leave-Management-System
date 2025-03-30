@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addNewEmployeeActivity"
+    android:orientation="vertical"
+    android:background="#B9B8B8">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#EF8B8B"
+        android:gravity="center_vertical">
+        <ImageButton
+            android:id="@+id/backBtnAddEmp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="#EF8B8B"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:contentDescription="@string/back_button" />
+        <TextView
+            android:id="@+id/titleAddEmp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="@string/add_new_employee"
+            android:layout_marginStart="15dp">
+        </TextView>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+            <TextView
+                android:id="@+id/warningBarAddEmp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All fields are mandatory."
+                android:textColor="#DF2323"/>
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="75dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <ImageView
+                        android:id="@+id/profileImageAddEmp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/profile_image"
+                        android:src="@drawable/baseline_person_24" />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentEnd="true"
+                    android:elevation="12dp"
+                    android:backgroundTint="#6927DD"
+                    app:cardCornerRadius="30dp"
+                    android:layout_alignParentBottom="true">
+                    <ImageButton
+                        android:id="@+id/setImageImgBtnAddEmp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#6927DD"
+                        android:layout_gravity="center"
+                        android:src="@drawable/baseline_add_photo_alternate_24"
+                        android:contentDescription="setImage" />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                android:text="@string/name" />
+
+            <EditText
+                android:id="@+id/nameAddEmp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:inputType="textCapWords"
+                android:layout_marginEnd="10dp"
+                android:padding="10dp"
+                android:autofillHints="Name" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                android:text="@string/designation" />
+
+            <EditText
+                android:id="@+id/designationAddEmp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:inputType="textCapWords"
+                android:layout_marginEnd="10dp"
+                android:padding="10dp"
+                android:autofillHints="designation" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                android:text="Employee Id" />
+
+            <EditText
+                android:id="@+id/empIdAddEmp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:inputType="textCapWords"
+                android:layout_marginEnd="10dp"
+                android:padding="10dp"
+                android:autofillHints="Employee Id" />
+
+            <TextView
+                android:id="@+id/genderTV_AddEmp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                android:text="@string/gender" />
+            <RadioGroup
+                android:id="@+id/genderRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/male"
+                    android:checked="false"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/female"
+                    android:checked="false"
+                    android:layout_marginStart="10dp"
+                    android:textSize="20sp" />
+                <RadioButton
+                    android:id="@+id/radioOtherGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="@string/other"
+                    android:checked="false"
+                    android:layout_marginStart="10dp"
+                    android:textSize="20sp" />
+            </RadioGroup>
+            <LinearLayout
+                android:id="@+id/userType_LL_AddEmp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:textSize="20sp"
+                    android:text="User Type"/>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:id="@+id/userTypeSpinner_AddEmp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_2dp_green"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                android:text="Employee Type" />
+            <EditText
+                android:id="@+id/empTypeAddEmp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:hint="@string/permanent_guest"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                android:text="@string/start_date" />
+            <TextView
+                android:id="@+id/startDateAddEmp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:background="@color/white"
+                android:padding="10dp"
+                app:drawableEndCompat="@drawable/baseline_calendar_month_24" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                android:text="@string/organisation_department" />
+            <EditText
+                android:id="@+id/departmentAddEmp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                android:text="@string/date_of_birth" />
+            <TextView
+                android:id="@+id/dobAddEmp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:background="@color/white"
+                android:padding="10dp"
+                app:drawableEndCompat="@drawable/baseline_calendar_month_24" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                android:text="@string/mobile_number" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/countryCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:importantForAutofill="no"
+                    android:background="@color/white"
+                    android:focusable="false"
+                    android:padding="10dp"
+                    android:text="@string/country_code"
+                    android:inputType="none" />
+                <EditText
+                    android:id="@+id/mobileNumberAddEmp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:autofillHints="phone"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                android:text="@string/email_address" />
+            <EditText
+                android:id="@+id/emailAddEmp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:autofillHints="emailAddress"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:text="@string/work_location" />
+            <EditText
+                android:id="@+id/workLocationAddEmp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:background="@color/white"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:text="Address" />
+            <EditText
+                android:id="@+id/addressAddEmp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:autofillHints="postalAddress" />
+            <Button
+                android:id="@+id/submitBtnAddEmp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="25dp"
+                android:backgroundTint="#EF8B8B"
+                android:text="@string/submit" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

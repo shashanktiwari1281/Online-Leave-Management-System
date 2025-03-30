@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/adminMode_mainDrawer"
+        android:title="Open Admin Mode"
+        android:visible="false"/>
+    <item
+        android:id="@+id/oneDayLeave_mainDrawer"
+        android:title="Apply One Day Leave" />
+
+    <item
+        android:id="@+id/halfDayLeave_mainDrawer"
+        android:title="Apply Half Day Leave" />
+
+    <item
+        android:id="@+id/stationLeave_mainDrawer"
+        android:title="Apply Station Leave" />
+
+    <item
+        android:id="@+id/shortLeave_mainDrawer"
+        android:title="Apply Short Leave" />
+
+    <item
+        android:id="@+id/viewBalance_mainDrawer"
+        android:title="View Leave Balance" />
+
+    <item
+        android:id="@+id/myApplication_mainDrawer"
+        android:title="My Applications" />
+
+    <item
+        android:id="@+id/editProfile_mainDrawer"
+        android:title="@string/edit_my_profile" />
+
+    <item
+        android:id="@+id/logOut_mainDrawer"
+        android:title="@string/log_out" />
+
+</menu>

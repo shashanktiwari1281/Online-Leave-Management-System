@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS"
+        tools:node="remove" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EMS"
+        tools:targetApi="31">
+        <activity
+            android:name=".halfDayLeaveForm"
+            android:exported="false" />
+        <activity
+            android:name=".resetLeavesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pastLeaveActivity"
+            android:exported="false" />
+        <activity
+            android:name=".empAllApplications"
+            android:exported="false" />
+        <activity
+            android:name=".reportedProblemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".employeeList"
+            android:exported="false" />
+        <activity
+            android:name=".addNewEmployeeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".editProfile"
+            android:exported="false" />
+        <activity
+            android:name=".employeeProfileViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".employeesOnLeaveActivity"
+            android:exported="false" />
+        <activity
+            android:name=".shortLeaveForm"
+            android:exported="false" />
+        <activity
+            android:name=".rejectedAppActivity"
+            android:exported="false" />
+        <activity
+            android:name=".approvedAppActivity"
+            android:exported="false" />
+        <activity
+            android:name=".applicationViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".myApplicationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".unapprovedApplicationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".adminHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".leaveBalanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".stationLeaveForm"
+            android:exported="false" />
+        <activity
+            android:name=".oneDayLeaveFormActivity"
+            android:exported="false" />
+        <activity
+            android:name=".noInternetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".logInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".launcherActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".moreOptionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".manageLeaveActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

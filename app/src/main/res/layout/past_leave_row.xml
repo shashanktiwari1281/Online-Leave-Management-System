@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+        <TextView
+            android:id="@+id/leaveCategory_PastLeavePg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="One Day Leave"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/leaveType_PastLeavePg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="One Day Leave"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/leaveDate_PastLeavePg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="One Day Leave"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/leaveCategory_PastLeavePg" />
+
+        <TextView
+            android:id="@+id/leaveReason_PastLeavePg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="One Day Leave"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/leaveDate_PastLeavePg" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black"/>
+</androidx.appcompat.widget.LinearLayoutCompat>
